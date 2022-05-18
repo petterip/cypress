@@ -202,7 +202,7 @@ export const isDescendent = ($el1, $el2) => {
 // mostly useful when traversing up parent nodes and wanting to
 // stop traversal if el is undefined or is html, body, or document
 export const isUndefinedOrHTMLBodyDoc = ($el: JQuery<HTMLElement>) => {
-  return !$el || !$el[0] || $el.is('body,html') || $document.isDocument($el[0])
+  return !$el || !$el[0] || $el.is('html') || $document.isDocument($el[0])
 }
 
 /**
